@@ -1,0 +1,42 @@
+@model ProjetoMVC.Models.Contato
+
+@{
+    ViewData["Title"] = "Detalhes do contato";
+}
+<div class="main__content">
+    <div class="titulo">
+        <h1>Detalhes</h1>
+    </div>
+
+    <div class="detalhes">
+        <dl class="detalhes__contato">
+            <dt class="detalhes__contato__topico">
+                @Html.DisplayNameFor(x => x.Nome)
+            </dt>
+            <dt>
+                @Html.DisplayFor(x => x.Nome)
+            </dt>
+        </dl>
+            <dl class="detalhes__contato">
+                <dt class="detalhes__contato__topico">
+                    @Html.DisplayNameFor(x => x.Telefone)
+                </dt>
+                <dt>
+                    @Html.DisplayFor(x => x.Telefone)
+                </dt>
+            </dl>
+            <dl class="detalhes__contato">
+                <dt class="detalhes__contato__topico">
+                    @Html.DisplayNameFor(x => x.Ativo)
+                </dt>
+                <dt>
+                    @Html.DisplayFor(x => x.Ativo)
+                </dt>
+            </dl>
+        </dl>
+        <div class="box-btn-detalhes">
+            <a class="btn-detalhes-link" asp-action="Editar" asp-route-id="@Model.Id">Editar</a>
+            <a class="voltar-link" asp-action="Index">Voltar</a>
+        </div>
+    </div>
+</div>

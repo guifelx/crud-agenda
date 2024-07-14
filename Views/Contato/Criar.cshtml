@@ -1,0 +1,33 @@
+@model ProjetoMVC.Models.Contato;
+
+@{
+    ViewData["Tittle"] = "Criar novo contato";
+}
+<div class="main__content">
+    <div class="titulo">
+        <h1>Criar novo contato</h1>
+    </div>
+
+    <div class="criar">
+        <form class="criar__contato" asp-action="Criar">
+            <div>
+                <label hidden asp-for="Nome"></label>
+                <input asp-for="Nome" class="criar__contato__input" placeholder="Nome" />
+            </div>
+            <div>
+                <label hidden asp-for="Telefone"></label>
+                <input asp-for="Telefone" class="criar__contato__input" placeholder="Telefone" />
+            </div>
+            <div>
+                <label asp-for="Ativo"></label>
+                <input type="checkbox" asp-for="Ativo" class="check-btn" />
+            </div>
+            <div>
+                <button class="btn-padrao" type="submit" value="Criar" class="" />Criar</button>
+            </div>
+            <div>
+                <a class="voltar-link" asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
