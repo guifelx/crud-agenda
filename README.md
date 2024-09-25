@@ -1,7 +1,7 @@
-# cadastro-simples
+# CRUD Agenda
 
 <h2>📜 Sobre</h2>
-<p>Projeto de cadastro simples, aplicando CRUD para o gerenciamento de contatos.</p>
+<p>Projeto de cadastro, aplicando CRUD para o gerenciamento de contatos.</p>
 
 <h2>Tecnologias aplicadas</h2>
 <ul>
